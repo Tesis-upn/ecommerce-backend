@@ -31,7 +31,6 @@ export const paymentWebhook = async (req: Request, res: Response) => {
   if (data.status === "paid") {
     console.log("Pago confirmado:", data.order_id);
 
-    // actualizar DB...
   }
 
   res.send("OK");
